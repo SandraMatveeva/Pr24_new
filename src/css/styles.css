@@ -1,0 +1,7 @@
+/* Normalize styles */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css");
+/* Import all section styles */
+@import url("global.css");
+@import url("header.css");
+@import url("hero.css");
+@import url("footer.css");

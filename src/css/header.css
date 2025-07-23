@@ -1,0 +1,98 @@
+.header-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+}
+
+.logo-header-app {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-logo-svg {
+  background-color: blueviolet;
+}
+
+.header-logo-txt-title {
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  color: #000000f5;
+  font-weight: 400;
+  /* font-feature-settings: "tnum" on, "lnum" on, "ss01" on; */
+  line-height: 21px;
+}
+
+.header-logo-txt-subtitle {
+  font-size: 13px;
+  color: #000000b8;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-right: 28px;
+}
+
+.header-info-currency {
+  letter-spacing: 0.2px;
+  /* font-size: 15px; */
+  color: #000000f5;
+  font-weight: 400;
+  /* font-feature-settings: "tnum" on, "lnum" on, "ss01" on; */
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.currency-name {
+  width: 24px;
+  height: 24px;
+}
+
+.currency-name-USD {
+  background: url(../img/header/ic_dollar.2d9edd6d630d9e65.svg) no-repeat center;
+}
+
+.header-currency-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-currency-item {
+  background: url(../img/header/triangle-down-red.f5d55d6decc3da99.svg)
+    no-repeat left center;
+  padding-left: 28px; /* щоб текст був справа від іконки */
+  background-size: 24px 24px;
+}
+
+.header-info-contact {
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  gap: 28px;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.header-info-contact-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header-info-contact-item-call {
+  background: url(../img/header/phone.svg) no-repeat left center;
+  padding-left: 28px; /* щоб текст був справа від іконки */
+  background-size: 20px 20px;
+}
+
+.header-info-contact-item-chat {
+  background: url(../img/header/ic_chat.488238bb17f3f410.svg) no-repeat left
+    center;
+  padding-left: 28px; /* щоб текст був справа від іконки */
+  background-size: 24px 24px;
+}
