@@ -1,2 +1,27 @@
-.some-class {
+.wr-footer {
+  margin-top: 48px;
+  padding: 36px 24px 0px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.footer-list {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-license {
+  letter-spacing: 0.6px;
+  color: #0000008a;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.footer-item {
+  letter-spacing: 0.5px;
+  color: #000000f5;
+  font-weight: 400;
+  font-size: 13px;
 }

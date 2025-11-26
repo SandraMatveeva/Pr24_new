@@ -1,0 +1,64 @@
+{
+  "header": {
+    "buy": "Buy rate",
+    "sell": "Sell rate",
+    "contactBank": "Communication with the bank",
+    "support": " Help on - line ",
+    "logoSubtitle": "for business",
+    "logoTxt": "Privat24"
+  },
+  "hero": {
+    "moreDetails": "More details",
+
+    "bannerTitle1": "Online Loan for Business",
+    "bannerText1": "Issue the loan in a few clicks without visiting the bank branch. <br /><br /> Check your offer in the new web-version of «Privat24 for Business»",
+
+    "bannerTitle2": "Salary Project",
+    "bannerText2": "Pay salaries via Privat24 for Business without fee for salary project cash settlement transactions.",
+
+    "bannerTitle3": "«Privat24 for Business» mobile app",
+    "bannerText3": "Manage business from your smartphone",
+
+    "bannerTitle4": "Loan for Energetic Autonomy",
+    "bannerText4": "Additional funds for purchasing energy generation systems.",
+
+    "bannerTitle5": "Support the Ukrainian army in any part of the world!",
+    "bannerText5": "«Charity» widget at the enterprise selection page.",
+
+    "bannerTitle6": "SmartID",
+    "bannerText6": "Free and safe cloud keys for digital signing. <br />Sign electronic documents instantly without flash drives and plugins!",
+
+    "bannerTitle7": "Reporting Calendar",
+    "bannerText7": "Will remind you about deadlines пfor submitting reports to the taxoffice or statistics service.",
+
+    "news": "News",
+    "showAll": "Show all",
+    "newsTitle": "Technical work. Is everything broken?",
+    "newsText": "Nothing is broken — we’re just improving our services. Therefore, during the period 03.07.2025 22:00 – 04.07.2025 01:00, there may be some temporary difficulties in the operation of Privat24 for Business, specifically with the generation and signing using QES/EDS keys. ",
+    "titleRates": "Exchange rates",
+    "list": "List",
+    "graph": "Graph",
+    "сurrency": "Currency",
+    "buyRate": "Buy rate",
+    "sellRate": "Sell rate",
+    "NBURate": "NBU rate",
+
+    "avtorizHeader": "Login",
+    "avtorizPr24": "Log in with Privat24",
+    "Or": "or",
+    "logIES": "log in with the file IES",
+    "logLogin": "log in with a login",
+    "logResident": "log in for e-resident",
+    "codeText": "Scan the QR-code via an application <<Privat24>> or <<Privat24 forbusiness>>",
+    "demo": "Demo version",
+    "download": "Download the application"
+  },
+
+  "footer": {
+    "license": " © 2024 PrivatBank <br /> License No. 22 dated 05.10.2011",
+    "policy": "Privacy policy",
+    "tariffs": "Regulations/Tariffs",
+    "сonditions": "Terms and Conditions",
+    "security": "Security rules"
+  }
+}

@@ -1,30 +1,47 @@
 <header class="header-app">
   <div class="logo-header-app">
-    <svg width="32" height="32" class="header-logo-svg"></svg>
-    <div class="header-logo-txt">
-      <div class="header-logo-txt-title">Privat24</div>
-      <div class="header-logo-txt-subtitle">for biseness</div>
-    </div>
+    <a class="header-link-logo" href="#header">
+      <svg width="32" height="32" class="header-logo-svg"></svg>
+      <div class="header-logo-txt">
+        <div class="header-logo-txt-title" data-i18n="header.logoTxt">Приват24</div>
+        <div class="header-logo-txt-subtitle" data-i18n="header.logoSubtitle">
+          для бізнесу
+        </div>
+      </div>
+    </a>
   </div>
   <div class="header-info">
     <div class="header-info-currency">
       <!-- <img src="" alt="" /> -->
       <div class="currency-name currency-name-USD"></div>
       <ul class="header-currency-list">
-        <li class="header-currency-item">41.28/</li>
-        <li class="header-currency-item">41.68</li>
+        <li class="header-currency-item" data-i18n-tippy="header.buy">
+          41.28/
+        </li>
+        <li class="header-currency-item" data-i18n-tippy="header.sell">
+          41.68
+        </li>
       </ul>
     </div>
+
     <div class="header-info-contact">
       <ul class="header-info-contact-list">
-        <li class="header-info-contact-item-call">3700</li>
-        <li class="header-info-contact-item-chat">
+        <li
+          class="header-info-contact-item-call"
+          data-i18n-tippy="header.contactBank"
+        >
+          3700
+        </li>
+        <li
+          class="header-info-contact-item-chat"
+          data-i18n-tippy="header.support"
+        >
           <button class="btn-chat" type="button"></button>
         </li>
       </ul>
     </div>
     <div class="header-info-lang">
-      <button class="header-btn-lang">EN</button>
+      <button class="header-btn-lang" id="lang-toggle">EN</button>
     </div>
   </div>
 </header>

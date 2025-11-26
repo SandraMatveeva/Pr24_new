@@ -1,12 +1,16 @@
 .wr-hero {
   display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 /* #region banner-swipper */
 
 .wr-banner-swiper {
-  width: 70%;
+  width: 55%;
+  /* padding-right: 46px; */
 }
+
 .banner-list {
   display: flex;
 }
@@ -27,6 +31,13 @@
   font-weight: 700;
   line-height: 44px;
   margin-bottom: 12px;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 445px;
+  height: auto;
+  margin-bottom: 24px;
 }
 
 .banner-text {
@@ -58,6 +69,7 @@
   background-color: rgb(227, 227, 227);
   padding: 12px 20px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .wr-btn-nav-next {
@@ -67,6 +79,7 @@
   background-color: rgb(227, 227, 227);
   padding: 12px 20px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .wr-btn-nav-text {
@@ -78,10 +91,23 @@
 
 /* #region news */
 
+.wrap-news-calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  width: 47%;
+  min-width: 299px;
+    max-width: 375px;
+  height: 636px;
+}
+
 .wrap-news {
   display: flex;
   flex-direction: column;
+  gap: 24px;
   background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* мʼяка тінь */
   padding: 24px;
   gap: 24px;
   border-radius: 8px;
@@ -124,6 +150,15 @@
 }
 
 .title-text-news {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;          /* показати лише 5 рядків */
+  -webkit-box-orient: vertical;   /* обмеження по вертикалі */
+  overflow: hidden;               /* сховати все, що виходить за межі */
+  text-overflow: ellipsis;        /* додати "..." в кінці */
+  line-height: 1.5;               /* висота одного рядка */
+  min-height: calc(1.5em * 5);    /* фіксована висота — щоб не стрибало */
+  max-height: calc(1.5em * 5);
+  word-break: break-word;         /* переносити довгі слова */
   font-size: 13px;
 }
 
@@ -203,7 +238,6 @@
 .news-show-all.active {
   display: block;
 }
-
 /* #endregion news-show-all*/
 
 /* #region news-show-one*/
@@ -260,10 +294,6 @@
   display: none;
 }
 
-/* .news-show-one {
-  display: none;
-} */
-
 .news-show-one[hidden] {
   display: none;
 }
@@ -273,3 +303,353 @@
 }
 
 /* #endregion news-show-one*/
+
+.wrap-currency-calc {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* мʼяка тінь */
+  gap: 24px;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.wr-btn-group {
+  display: flex;
+  gap: 24px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+  border: 1px solid #393939;
+  border-radius: 6px;
+  background: #c5c5c5;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 116px);
+  padding: 4px;
+}
+
+.view-btn.active {
+  background-color: #ffffff;
+  border-radius: 4px;
+  height: 28px;
+  width: 100%;
+}
+
+.btn-list {
+  width: 100%;
+}
+
+.btn-graph {
+  height: 28px;
+  width: 100%;
+}
+
+.table-list {
+  width: 100%;
+}
+
+.table-head-list {
+  letter-spacing: 0.5px;
+  color: #000000b8;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.table-head-item {
+  padding: 0 0 24px;
+}
+
+.table-body-list {
+  letter-spacing: 0.2px;
+  color: #000000f5;
+  font-size: 13px;
+  font-weight: 400;
+  font-feature-settings: "tnum" on, "lnum" on, "ss01" on;
+  line-height: 22px;
+}
+
+.table-body-item {
+  padding: 0 0 24px;
+}
+
+tr:last-child .table-body-item {
+    padding-bottom: 0;
+}
+
+
+.arrow.down {
+  background: url(../img/header/triangle-down-red.f5d55d6decc3da99.svg)
+    no-repeat left center;
+  padding-left: 24px;
+  background-size: 24px 24px;
+}
+
+.content-graph {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 8px;
+  visibility: hidden;
+}
+
+.currency-dropdown {
+ 
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+  position: absolute;
+}
+
+.currency-dropdown.visible {
+  visibility: visible;
+  opacity: 1;
+  position: static;
+}
+
+.btn-currency-type {
+  display: flex;
+  gap: 24px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.checkmark {
+  visibility: hidden;
+}
+
+.btn-currency-type-dropdown.active .checkmark {
+  visibility: visible;
+  color: #1d72f3; /* синя галочка */
+}
+
+.currency-type-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 10px 20px;
+  z-index: 10;
+  flex-direction: column;
+}
+
+.btn-currency-type-dropdown {
+  padding: 8px 12px;
+  background: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.currency-type-menu {
+  display: none;
+}
+
+.currency-type-menu.visible {
+  display: block;
+}
+
+
+.content-list,
+.content-graph {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.content-list.visible,
+.content-graph.visible {
+  visibility: visible;
+  opacity: 1;
+  position: static;
+}
+
+/* #region avtoriz */
+
+.wrap-app-avtoriz {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* мʼяка тінь */
+  padding: 24px;
+  gap: 24px;
+  border-radius: 8px;
+  width: 47%;
+  min-width: 299px;
+    max-width: 375px;
+  height: 636px;
+}
+
+.app-avtoriz-header {
+  letter-spacing: 0.24px;
+  color: #000000f5;
+  font-size: 20px;
+  font-weight: 700;
+  font-feature-settings: "ss01" off;
+  line-height: 1.8461538462rem;
+}
+
+.app-avtoriz-log-Pr24 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.0769230769rem;
+  cursor: pointer;
+  text-align: left;
+  gap: 1.2307692308rem;
+  width: 100%;
+  padding: 0.7692307692rem 1.8461538462rem;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5384615385rem;
+  letter-spacing: 0.4px;
+  color: #fff;
+  background: #000000f5;
+  border-radius: 6px;
+  border: none;
+
+  /*  */
+}
+
+.app-avtoriz-log-Pr24:before {
+  content: "";
+  width: 2rem;
+  min-width: 2rem;
+  height: 2rem;
+  display: block;
+  background: url(../img/body_banner/ic_p24p.svg) no-repeat center;
+}
+
+.text-or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #333;
+}
+
+.text-or:before {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  height: 0.0769230769rem;
+  background: #00000026;
+}
+
+.text-or:after {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  height: 0.0769230769rem;
+  background: #00000026;
+}
+
+.text-or:not(:empty)::before {
+  margin-right: 0.75em;
+}
+
+.text-or:not(:empty)::after {
+  margin-left: 0.75em;
+}
+
+.wr-qr-code {
+  display: flex;
+  align-items: center;
+  border: 1px solid #393939;
+  border-radius: 6px;
+  gap: 24px;
+  padding: 24px;
+}
+
+.qr-code {
+  min-width: 106px;
+  height: 106px;
+  /* border: 1px solid #005bdb; */
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-code-text {
+  letter-spacing: 0.5px;
+  color: #000000f5;
+  font-weight: 400;
+  font-size: 13px;
+  font-feature-settings: "tnum" on, "lnum" on, "ss01" on;
+  line-height: 1.2307692308rem;
+}
+
+.btn-demo {
+  color: #005bdb;
+}
+
+.wr-link-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.log-link {
+  color: #005bdb;
+}
+
+.wr-download {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title-download {
+  text-align: center;
+}
+
+.app-link-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.app-link {
+  display: block; /* щоб був як кнопка */
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.app-link.apple {
+  background-image: url("../img/body_banner/apple-svgrepo-com.svg");
+}
+
+.app-link.android {
+  background-image: url("../img/header/ic_chat.488238bb17f3f410.svg");
+}
+
+/* #endregion avtoriz */
+
+
+@media (min-width: 1280px) {
+  .table-body-list {
+  letter-spacing: 0.2px;
+  color: #000000f5;
+  font-size: 17px;
+  font-weight: 400;
+  font-feature-settings: "tnum" on, "lnum" on, "ss01" on;
+  line-height: 22px;
+}
+}

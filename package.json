@@ -21,6 +21,11 @@
     "vite-plugin-html-inject": "^1.1.2"
   },
   "dependencies": {
-    "swiper": "^11.2.10"
+    "chart.js": "^4.5.0",
+    "i18next": "^25.6.0",
+    "i18next-http-backend": "^3.0.2",
+    "qrcode": "^1.5.4",
+    "swiper": "^11.2.10",
+    "tippy.js": "^6.3.7"
   }
 }

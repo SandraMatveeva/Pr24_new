@@ -12,8 +12,16 @@
   align-items: center;
 }
 
+.header-link-logo {
+  display: flex;
+  gap: 12px;
+}
+
 .header-logo-svg {
   background-color: blueviolet;
+  background: url(../img/header/logo.png);
+  height: 32px;
+  width: 32px;
 }
 
 .header-logo-txt-title {
@@ -21,7 +29,6 @@
   font-size: 15px;
   color: #000000f5;
   font-weight: 400;
-  /* font-feature-settings: "tnum" on, "lnum" on, "ss01" on; */
   line-height: 21px;
 }
 
@@ -39,10 +46,8 @@
 
 .header-info-currency {
   letter-spacing: 0.2px;
-  /* font-size: 15px; */
   color: #000000f5;
   font-weight: 400;
-  /* font-feature-settings: "tnum" on, "lnum" on, "ss01" on; */
   line-height: 24px;
   display: flex;
   align-items: center;
@@ -95,4 +100,13 @@
     center;
   padding-left: 28px; /* щоб текст був справа від іконки */
   background-size: 24px 24px;
+}
+
+.header-btn-lang {
+  padding: 18px;
+}
+
+.header-btn-lang:hover {
+  background: #f8efef28;
+  border-radius: 8px;
 }
