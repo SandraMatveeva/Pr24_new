@@ -7,8 +7,12 @@
 /* #region banner-swipper */
 
 .wr-banner-swiper {
-  width: 55%;
+  /* width: 45%; */
   /* padding-right: 46px; */
+
+  width: auto;
+  display: block;
+  overflow: hidden;
 }
 
 .banner-list {
@@ -94,12 +98,11 @@
 .wrap-news-calc {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 24px;
-  width: 47%;
   min-width: 299px;
-    max-width: 375px;
-  height: 636px;
+  max-width: 375px;
+  height: 610px;
 }
 
 .wrap-news {
@@ -111,6 +114,7 @@
   padding: 24px;
   gap: 24px;
   border-radius: 8px;
+  height: 100%;
 }
 
 .wrap-news-title {
@@ -206,7 +210,7 @@
 .btn-news-show-all-title {
   margin-bottom: 8px;
   color: #005bdb;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .news-show-all-text {
@@ -312,6 +316,7 @@
   gap: 24px;
   border-radius: 8px;
   padding: 24px;
+  height: 100%;
 }
 
 .wr-btn-group {
@@ -322,20 +327,26 @@
 .btn-group {
   display: flex;
   gap: 8px;
-  border: 1px solid #393939;
+  border: 1px solid #a0a0a0;
   border-radius: 6px;
-  background: #c5c5c5;
+  background: #e4e4e4;
   justify-content: center;
   align-items: center;
   width: calc(100% - 116px);
-  padding: 4px;
+  /* padding: 2px 12px; */
+  font-size: 13px;
 }
 
 .view-btn.active {
-  background-color: #ffffff;
+  /* background-color: #ffffff;
   border-radius: 4px;
   height: 28px;
   width: 100%;
+  padding: 6px 12px; */
+
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 6px 12px;
 }
 
 .btn-list {
@@ -413,7 +424,7 @@ tr:last-child .table-body-item {
 .btn-currency-type {
   display: flex;
   gap: 24px;
-  padding: 10px 20px;
+  padding: 4px 10px;
   cursor: pointer;
   background-color: white;
   border: 1px solid #ccc;
@@ -489,10 +500,10 @@ tr:last-child .table-body-item {
   padding: 24px;
   gap: 24px;
   border-radius: 8px;
-  width: 47%;
-  min-width: 299px;
-    max-width: 375px;
-  height: 636px;
+  /* width: 47%; */
+  min-width: 334px;
+  max-width: 393px;
+  height: 610px;
 }
 
 .app-avtoriz-header {
@@ -513,7 +524,7 @@ tr:last-child .table-body-item {
   text-align: left;
   gap: 1.2307692308rem;
   width: 100%;
-  padding: 0.7692307692rem 1.8461538462rem;
+  /* padding: 0.7692307692rem 1.8461538462rem; */
   font-size: 15px;
   font-weight: 700;
   line-height: 1.5384615385rem;
@@ -602,6 +613,8 @@ tr:last-child .table-body-item {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  letter-spacing: .0153846154rem;
+  font-size: 13px;
 }
 
 .log-link {
@@ -651,5 +664,15 @@ tr:last-child .table-body-item {
   font-weight: 400;
   font-feature-settings: "tnum" on, "lnum" on, "ss01" on;
   line-height: 22px;
+}
+
+.wrap-news-calc{
+    max-width: 375px;
+    min-width: 375px;
+}
+
+.wrap-app-avtoriz{
+    max-width: 393px;
+    min-width: 393px;
 }
 }
